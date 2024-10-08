@@ -1,0 +1,53 @@
+========================================================================
+
+Neural Network models for effective property calculation
+
+========================================================================
+
+The directories thermal_R3_predictions and elastic_R3_predictions contain the trained neural network models, as well as the main files that load the models and run them in order to predict thermal and elastic effective properties.
+
+
+-> Effective thermal conductivity calculation
+
+        _______________________________
+
+	Directory: thermal_R3_prediction
+	Main file: predict_thermal.py
+        _______________________________
+
+	Model:  N_T: x_T |--> k
+		
+		x_T = (Vf,n,rk,kref)
+
+	Input features: 
+		Vf  : Volume fraction 
+		n   : topology shape
+		rk  : material ratio
+		kref: reference thermal conductivity
+
+	Output:
+		k: Effective thermal conductivity
+
+
+-> Effective elastic moduli calculation (Young and Shear)
+
+        _______________________________
+
+	Directory: elastic_R3_predictions
+	Main file: predict_elastic.py
+        _______________________________
+
+	Model:  N_E: x_E |--> (E,G)
+
+		x_E = (Vf,n,rE,Eref)
+
+	Input features: 
+		Vf  : Volume fraction 
+		n   : topology shape
+		rE  : material ratio
+		Eref: reference Young's modulus
+
+	Output:
+		(E,G): Effective Young's and Shear moduli
+
+
