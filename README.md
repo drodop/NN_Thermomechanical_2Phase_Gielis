@@ -1,6 +1,7 @@
 ========================================================================
 
-Neural Network models for effective property calculation
+Neural Network models for thermal and mechanical effective property calculation of double phase materials.
+The inner architecture is described by the Gielis formula (https://doi.org/10.1007/s00022-015-0269-z)
 
 ========================================================================
 
