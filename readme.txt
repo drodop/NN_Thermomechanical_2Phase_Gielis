@@ -17,13 +17,12 @@ The directories thermal_R3_predictions and elastic_R3_predictions contain the tr
 
 	Model:  N_T: x_T |--> k
 		
-		x_T = (Vf,n,rk,kref)
+		x_T = (Vf,n,rk)
 
 	Input features: 
 		Vf  : Volume fraction 
 		n   : topology shape
-		rk  : material ratio
-		kref: reference thermal conductivity
+		rk  : material ratio (k1/k2)
 
 	Output:
 		k: Effective thermal conductivity
@@ -39,13 +38,12 @@ The directories thermal_R3_predictions and elastic_R3_predictions contain the tr
 
 	Model:  N_E: x_E |--> (E,G)
 
-		x_E = (Vf,n,rE,Eref)
+		x_E = (Vf,n,rE)
 
 	Input features: 
 		Vf  : Volume fraction 
 		n   : topology shape
-		rE  : material ratio
-		Eref: reference Young's modulus
+		rE  : material ratio (E1/E2)
 
 	Output:
 		(E,G): Effective Young's and Shear moduli
