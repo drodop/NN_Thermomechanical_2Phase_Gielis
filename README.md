@@ -5,7 +5,7 @@ The inner architecture is described by the Gielis formula (https://doi.org/10.10
 
 ========================================================================
 
-The directories thermal_R3_predictions and elastic_R3_predictions contain the trained neural network models, as well as the main files that load the models and run them in order to predict thermal and elastic effective properties.
+The directories thermal_R3_predictions and mechanical_R3_predictions contain the trained neural network models, as well as the main files that load the models and run them in order to predict thermal and elastic effective properties.
 
 
 -> Effective thermal conductivity calculation
@@ -33,7 +33,7 @@ The directories thermal_R3_predictions and elastic_R3_predictions contain the tr
 
         _______________________________
 
-	Directory: elastic_R3_predictions
+	Directory: mechanical_R3_predictions
 	Main file: predict_elastic.py
         _______________________________
 
